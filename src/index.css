@@ -1,18 +1,31 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #58b123, #d9cb33);
+  background: linear-gradient(-45deg, #06c88e, #098189, #0c6484, #055890);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 .container {
-  background: #ffffff;
+  background: white;
   padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgb(4, 13, 63);
   width: 100%;
   max-width: 500px;
 }
@@ -29,7 +42,7 @@ input[type="text"] {
   width: 70%;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ddd;
+  border: 2px solid #9c9999;
   border-radius: 6px;
   outline: none;
   transition: border 0.3s ease;
@@ -42,7 +55,7 @@ input[type="text"]:focus {
 button {
   padding: 10px 15px;
   margin-left: 10px;
-  background-color: #06c526;
+  background-color: #0d82b0;
   color: white;
   border: none;
   border-radius: 6px;
@@ -51,7 +64,7 @@ button {
 }
 
 button:hover {
-  background-color: #09b548;
+  background-color: #103f98;
 }
 
 .listheading {
@@ -66,7 +79,7 @@ button:hover {
   width: 70%;
   font-size: 16px;
   padding: 10px;
-  background: #f4f4f4;
+  background: #c2c0c036;
   border-radius: 6px;
   margin-top: 10px;
   word-wrap: break-word;
